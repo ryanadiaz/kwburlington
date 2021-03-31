@@ -66,7 +66,7 @@
 
   <div id="page-sub-header">
     <div class="container">
-      <img src="/wp-content/themes/kwcarolinas/inc/assets/img/hero-overlay-whitelogo_transparent.png" alt="Keller Williams Carolinas Region" class="hero-overlay-image"/>
+      <img src="/wp-content/themes/kwburlington/inc/assets/img/hero-overlay-whitelogo_transparent.png" alt="Keller Williams Carolinas Region" class="hero-overlay-image"/>
     </div>
   </div>
   <?php endif; ?>

@@ -24,6 +24,6 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<script src="/wp-content/themes/kwcarolinas/inc/assets/js/custom.js"></script>
+<script src="/wp-content/themes/kwburlington/inc/assets/js/custom.js"></script>
 </body>
 </html>

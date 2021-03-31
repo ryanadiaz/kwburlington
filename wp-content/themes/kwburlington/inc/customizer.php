@@ -62,7 +62,7 @@ function wp_bootstrap_starter_customize_register( $wp_customize ) {
             'superhero' => 'Superhero',
             'united' => 'United',
             'yeti' => 'Yeti',
-            'kwcarolinas' => 'KW Carolinas',
+            'kwburlington' => 'KW Burlington',
         )
     ) ) );
 
