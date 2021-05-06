@@ -1037,8 +1037,9 @@ body:not(.theme-preset-active) footer#colophon {
 /*--------------------------------------------------------------
 # Custom Styling
 --------------------------------------------------------------*/
+
 .bg-kwburlington {
-  background-color: #12315f!important;
+  background-color: #000!important;
 }
 
 .bg-kwburlington .navbar-toggler-icon {
@@ -1061,39 +1062,104 @@ body:not(.theme-preset-active) footer#colophon {
   }
 }
 
+#menu-top-header-menu li:not(:first-child) {
+  padding-left: 15px;
+}
+
+#menu-main-menu li:first-child {
+  cursor: text;
+}
+
+#menu-main-menu li:first-child a {
+  background: #CE011F;
+  color: #fff;
+  padding: 20px 30px;
+  pointer-events: none;
+  text-align: center;
+  font-weight: 600;
+}
+
+#menu-main-menu li:not(:first-child) {
+  display: flex;
+  align-items: center;
+}
+
+#menu-main-menu li:not(:first-child) a {
+  border: 2px solid #CE011F;
+  padding: 10px 20px;
+  color: #CE011F;
+  text-align: center;
+  font-weight: 600;
+}
+
+#menu-main-menu li:not(:first-child) a:hover {
+  background-color: #CE011F;
+  color: #fff;
+}
+
+#menu-main-menu li:nth-child(2) a {
+  border-top: 2px solid #CE011F;
+  border-right: 2px solid #CE011F;
+  border-left: none;
+  border-bottom: 2px solid #CE011F;
+}
 
 .main-logo-width {
   max-width: 125px;
 }
 
-#main-nav a.nav-link {
-  color: #ffffff;
-  text-transform: unset;
-  font: normal normal normal 22px/1.4em oswald-medium,oswald,sans-serif;
+#menu-main-menu {
+  width: 100%;
+  justify-content: space-between;
 }
 
-#main-nav a.nav-link:hover {
+.menu-link {
+  display: block;
+  padding: .5rem 1rem;
+}
+
+#main-nav a.menu-link {
+  color: #ffffff;
+  text-transform: unset;
+  font: normal normal normal 22px/1.4em 'Lato', sans-serif;
+}
+
+@media (min-width: 1200px) {
+  .navbar-expand-xl .navbar-nav .menu-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+}
+
+
+#main-nav a.menu-link:hover {
   color: #CE011F;
 }
 
+.menu-link:focus, .menu-link:hover {
+  text-decoration: none;
+}
+
 #page-sub-header {
-  background-image: url('/wp-content/uploads/2021/02/hero_image-daytime_optimized-scaled.jpg')!important;
+  background-image: url('/wp-content/themes/kwburlington/inc/assets/img/burlington.jpg')!important;
   height: 50vh;
   min-height: 435px;
   padding: 0;
-  background-position: center!important;
+  background-position: center -30px!important;
   background-repeat: no-repeat!important;
 }
 
 #page-sub-header > .container {
-  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .hero-overlay-image {
-  max-width: 85%;
+  width: 85%;
+  max-width: 250px;
 }
 
 h2.section-title {
@@ -1291,4 +1357,13 @@ footer.bg-kwburlington {
 
 footer .site-info {
   color: #fff;
+}
+
+.section-four-links {
+  display: flex;
+}
+
+#section-four-icon-links {
+  display: flex;
+  flex-direction: column;
 }

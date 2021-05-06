@@ -18,6 +18,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <?php wp_head(); ?>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
@@ -52,7 +54,7 @@
         'theme_location'    => 'primary',
         'container'       => 'div',
         'container_id'    => 'main-nav',
-        'container_class' => 'collapse navbar-collapse justify-content-end',
+        'container_class' => 'collapse navbar-collapse justify-content-center',
         'menu_id'         => false,
         'menu_class'      => 'navbar-nav',
         'depth'           => 3,
@@ -62,13 +64,30 @@
       ?>
     </nav>
 	</header><!-- #masthead -->
+
   <?php if ( is_front_page() ): ?>
 
   <div id="page-sub-header">
     <div class="container">
-      <img src="/wp-content/themes/kwburlington/inc/assets/img/hero-overlay-whitelogo_transparent.png" alt="Keller Williams Carolinas Region" class="hero-overlay-image"/>
+      <img src="/wp-content/themes/kwburlington/inc/assets/img/kw_red_square_832.jpg" alt="Keller Williams Burlington Region" class="hero-overlay-image"/>
     </div>
   </div>
   <?php endif; ?>
-	<div id="content" class="site-content">
+  <div id="content" class="site-content">
   <?php endif; ?>
+
+  <nav class="navbar navbar-expand-xl justify-content-center">
+    <?php
+      wp_nav_menu(array(
+      'theme_location'    => 'secondary',
+      'container'       => 'div',
+      'container_id'    => 'secondary-nav',
+      'container_class' => '',
+      'menu_id'         => false,
+      'menu_class'      => 'navbar-nav',
+      'depth'           => 3,
+      'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
+      'walker'          => new wp_bootstrap_navwalker()
+      ));
+    ?>
+  </nav>
