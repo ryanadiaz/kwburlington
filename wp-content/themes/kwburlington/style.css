@@ -1372,6 +1372,23 @@ footer .site-info {
   display: flex;
 }
 
-#section-one, #section-two, #section-three, #section-four {
-  
+#section-one-heading {
+  color: #1a73e8;
+  padding: 0;
+}
+
+#section-one a {
+  font-size: 25px;
+}
+
+#section-one a:hover {
+  text-decoration: none;
+}
+
+#section-one div.row {
+  padding: 5px 0 5px 20%;
+}
+
+#section-one div.row i {
+  padding-right: 15px;
 }
