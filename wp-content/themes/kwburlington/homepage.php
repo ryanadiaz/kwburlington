@@ -9,7 +9,7 @@ get_header(); ?>
   <?php while ( have_posts() ) : the_post(); ?>
   
   <?php if ( get_field('section_one_heading') ) { ?>
-  <section id="section-one">
+  <section id="section-one" class="col-lg-2">
     <h2 id="section-one-heading"><?php the_field('section_one_heading'); ?></h2>
     <?php if ( have_rows('section_one_links') ) { ?>
     <?php while ( have_rows('section_one_links') ) : the_row(); ?>
@@ -24,70 +24,74 @@ get_header(); ?>
   </section>
   <?php } ?>
 
-  <?php if ( have_rows('section_two_top') ) { ?>
-  <?php while ( have_rows('section_two_top') ) : the_row(); ?>
-  <section id="section-two-top">
-    <h2 id="section-two-top-heading"><?php the_sub_field('section_two_top_heading'); ?></h2>
-    <?php if ( have_rows('section_two_top_links'))  { ?>
-    <?php while ( have_rows('section_two_top_links') ) : the_row(); ?>
-    <div class="row">
-      <a href="<?php the_sub_field('section_two_top_link'); ?>"><?php the_sub_field('section_two_top_title'); ?></a>
-    </div>
+  <section id="section-two" class="col-lg-2">
+    <?php if ( have_rows('section_two_top') ) { ?>
+    <?php while ( have_rows('section_two_top') ) : the_row(); ?>
+    <section id="section-two-top">
+      <h2 id="section-two-top-heading"><?php the_sub_field('section_two_top_heading'); ?></h2>
+      <?php if ( have_rows('section_two_top_links'))  { ?>
+      <?php while ( have_rows('section_two_top_links') ) : the_row(); ?>
+      <div class="row">
+        <a href="<?php the_sub_field('section_two_top_link'); ?>"><?php the_sub_field('section_two_top_title'); ?></a>
+      </div>
+      <?php endwhile; ?>
+      <?php } ?>
+    </section>
+    <?php endwhile; ?>
+    <?php } ?>
+
+    <?php if ( have_rows('section_two_middle') ) { ?>
+    <?php while ( have_rows('section_two_middle') ) : the_row(); ?>
+    <section id="section-two-middle">
+      <h2 id="section-two-middle-heading"><?php the_sub_field('section_two_middle_heading'); ?></h2>
+      <?php if ( have_rows('section_two_middle_links'))  { ?>
+      <?php while ( have_rows('section_two_middle_links') ) : the_row(); ?>
+      <div class="row">
+        <a href="<?php the_sub_field('section_two_middle_link'); ?>"><?php the_sub_field('section_two_middle_title'); ?></a>
+      </div>
+      <?php endwhile; ?>
+      <?php } ?>
+    </section>
+    <?php endwhile; ?>
+    <?php } ?>
+
+    <?php if ( have_rows('section_two_bottom') ) { ?>
+    <?php while ( have_rows('section_two_bottom') ) : the_row(); ?>
+    <section id="section-two-bottom">
+      <h2 id="section-two-bottom-heading"><?php the_sub_field('section_two_bottom_heading'); ?></h2>
+      <?php if ( have_rows('section_two_bottom_links'))  { ?>
+      <?php while ( have_rows('section_two_bottom_links') ) : the_row(); ?>
+      <div class="row">
+        <a href="<?php the_sub_field('section_two_bottom_link'); ?>"><?php the_sub_field('section_two_bottom_title'); ?></a>
+      </div>
+      <?php endwhile; ?>
+      <?php } ?>
+    </section>
     <?php endwhile; ?>
     <?php } ?>
   </section>
-  <?php endwhile; ?>
-  <?php } ?>
 
-  <?php if ( have_rows('section_two_middle') ) { ?>
-  <?php while ( have_rows('section_two_middle') ) : the_row(); ?>
-  <section id="section-two-middle">
-    <h2 id="section-two-middle-heading"><?php the_sub_field('section_two_middle_heading'); ?></h2>
-    <?php if ( have_rows('section_two_middle_links'))  { ?>
-    <?php while ( have_rows('section_two_middle_links') ) : the_row(); ?>
-    <div class="row">
-      <a href="<?php the_sub_field('section_two_middle_link'); ?>"><?php the_sub_field('section_two_middle_title'); ?></a>
-    </div>
+  <section id="section-three" class="col-lg-5">
+    <?php if ( have_rows('section_three_announcement_area') ) { ?>
+    <?php while ( have_rows('section_three_announcement_area') ) : the_row(); ?>
+    <section id="section-three-announcement-area">
+      <h2 id="section-three-announcement-area-heading"><?php the_sub_field('section_three_announcement_area_heading'); ?></h2>
+      <?php the_sub_field('section_three_announcement_area_announcements'); ?>
+    </section>
+    <?php endwhile; ?>
+    <?php } ?>
+
+    <?php if ( have_rows('section_three_main_content_area') ) { ?>
+    <?php while ( have_rows('section_three_main_content_area') ) : the_row(); ?>
+    <section id="section-three-main-content-area">
+      <?php the_sub_field('section_three_main_content'); ?>
+    </section>
     <?php endwhile; ?>
     <?php } ?>
   </section>
-  <?php endwhile; ?>
-  <?php } ?>
-
-  <?php if ( have_rows('section_two_bottom') ) { ?>
-  <?php while ( have_rows('section_two_bottom') ) : the_row(); ?>
-  <section id="section-two-bottom">
-    <h2 id="section-two-bottom-heading"><?php the_sub_field('section_two_bottom_heading'); ?></h2>
-    <?php if ( have_rows('section_two_bottom_links'))  { ?>
-    <?php while ( have_rows('section_two_bottom_links') ) : the_row(); ?>
-    <div class="row">
-      <a href="<?php the_sub_field('section_two_bottom_link'); ?>"><?php the_sub_field('section_two_bottom_title'); ?></a>
-    </div>
-    <?php endwhile; ?>
-    <?php } ?>
-  </section>
-  <?php endwhile; ?>
-  <?php } ?>
-
-  <?php if ( have_rows('section_three_announcement_area') ) { ?>
-  <?php while ( have_rows('section_three_announcement_area') ) : the_row(); ?>
-  <section id="section-three-announcement-area">
-    <h2 id="section-three-announcement-area-heading"><?php the_sub_field('section_three_announcement_area_heading'); ?></h2>
-    <?php the_sub_field('section_three_announcement_area_announcements'); ?>
-  </section>
-  <?php endwhile; ?>
-  <?php } ?>
-
-  <?php if ( have_rows('section_three_main_content_area') ) { ?>
-  <?php while ( have_rows('section_three_main_content_area') ) : the_row(); ?>
-  <section id="section-three-main-content-area">
-    <?php the_sub_field('section_three_main_content'); ?>
-  </section>
-  <?php endwhile; ?>
-  <?php } ?>
 
   <?php if ( get_field('section_four') ) { ?>
-  <section id="section-four">
+  <section id="section-four" class="col-lg-3">
     <?php the_field('section_four'); ?>
   </section>
   <?php } ?>

@@ -1367,3 +1367,11 @@ footer .site-info {
   display: flex;
   flex-direction: column;
 }
+
+#post-11.content-area {
+  display: flex;
+}
+
+#section-one, #section-two, #section-three, #section-four {
+  
+}

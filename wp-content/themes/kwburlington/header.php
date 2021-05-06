@@ -69,7 +69,7 @@
 
   <div id="page-sub-header">
     <div class="container">
-      <img src="/wp-content/themes/kwburlington/inc/assets/img/kw_red_square_832.jpg" alt="Keller Williams Burlington Region" class="hero-overlay-image"/>
+      <img src="/wp-content/themes/kwburlington/inc/assets/img/kw_red_square_832.jpg" alt="Keller Williams Burlington MC" class="hero-overlay-image"/>
     </div>
   </div>
   <?php endif; ?>
