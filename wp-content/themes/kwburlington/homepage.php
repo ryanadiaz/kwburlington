@@ -14,7 +14,7 @@ get_header(); ?>
     <?php if ( have_rows('section_one_links') ) { ?>
     <?php while ( have_rows('section_one_links') ) : the_row(); ?>
     <div class="row">
-      <a href="<?php the_sub_field('section_one_link'); ?>">
+      <a href="<?php the_sub_field('section_one_link'); ?>" target="_blank">
         <i class="<?php the_sub_field('section_one_icon'); ?>"></i>
         <?php the_sub_field('section_one_title'); ?>
       </a>
@@ -32,7 +32,7 @@ get_header(); ?>
       <?php if ( have_rows('section_two_top_links'))  { ?>
       <?php while ( have_rows('section_two_top_links') ) : the_row(); ?>
       <div class="row">
-        <a href="<?php the_sub_field('section_two_top_link'); ?>"><?php the_sub_field('section_two_top_title'); ?></a>
+        <a href="<?php the_sub_field('section_two_top_link'); ?>" target="_blank"><?php the_sub_field('section_two_top_title'); ?></a>
       </div>
       <?php endwhile; ?>
       <?php } ?>
@@ -47,7 +47,7 @@ get_header(); ?>
       <?php if ( have_rows('section_two_middle_links'))  { ?>
       <?php while ( have_rows('section_two_middle_links') ) : the_row(); ?>
       <div class="row">
-        <a href="<?php the_sub_field('section_two_middle_link'); ?>"><?php the_sub_field('section_two_middle_title'); ?></a>
+        <a href="<?php the_sub_field('section_two_middle_link'); ?>" target="_blank"><?php the_sub_field('section_two_middle_title'); ?></a>
       </div>
       <?php endwhile; ?>
       <?php } ?>
@@ -62,7 +62,7 @@ get_header(); ?>
       <?php if ( have_rows('section_two_bottom_links'))  { ?>
       <?php while ( have_rows('section_two_bottom_links') ) : the_row(); ?>
       <div class="row">
-        <a href="<?php the_sub_field('section_two_bottom_link'); ?>"><?php the_sub_field('section_two_bottom_title'); ?></a>
+        <a href="<?php the_sub_field('section_two_bottom_link'); ?>" target="_blank"><?php the_sub_field('section_two_bottom_title'); ?></a>
       </div>
       <?php endwhile; ?>
       <?php } ?>
