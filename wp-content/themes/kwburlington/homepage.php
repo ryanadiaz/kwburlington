@@ -9,7 +9,7 @@ get_header(); ?>
   <?php while ( have_posts() ) : the_post(); ?>
   
   <?php if ( get_field('section_one_heading') ) { ?>
-  <section id="section-one" class="col-lg-2">
+  <section id="section-one" class="col-lg-2 col-sm-12">
     <h2 id="section-one-heading"><?php the_field('section_one_heading'); ?></h2>
     <?php if ( have_rows('section_one_links') ) { ?>
     <?php while ( have_rows('section_one_links') ) : the_row(); ?>
@@ -24,7 +24,7 @@ get_header(); ?>
   </section>
   <?php } ?>
 
-  <section id="section-two" class="col-lg-2">
+  <section id="section-two" class="col-lg-2 col-sm-12">
     <?php if ( have_rows('section_two_top') ) { ?>
     <?php while ( have_rows('section_two_top') ) : the_row(); ?>
     <section id="section-two-top">
@@ -71,7 +71,7 @@ get_header(); ?>
     <?php } ?>
   </section>
 
-  <section id="section-three" class="col-lg-5">
+  <section id="section-three" class="col-lg-5 col-sm-12">
     <?php if ( have_rows('section_three_announcement_area') ) { ?>
     <?php while ( have_rows('section_three_announcement_area') ) : the_row(); ?>
     <section id="section-three-announcement-area">
@@ -91,7 +91,7 @@ get_header(); ?>
   </section>
 
   <?php if ( get_field('section_four') ) { ?>
-  <section id="section-four" class="col-lg-3">
+  <section id="section-four" class="col-lg-3 col-sm-12">
     <?php the_field('section_four'); ?>
   </section>
   <?php } ?>
