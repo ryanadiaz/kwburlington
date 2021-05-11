@@ -1472,3 +1472,36 @@ footer .site-info {
     justify-content: space-between;
   }
 }
+
+.team-member-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.team-member-container img {
+  border: 1px solid black;
+  border-radius: 50%;
+  max-height: 227.5px;
+  min-width: 227.5px;
+}
+
+.team-member-name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.team-member-title {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.subpage-heading {
+  text-align: center;
+  color: #CE011F!important;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
