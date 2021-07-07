@@ -40,10 +40,20 @@
       <div class="navbar-brand">
         <?php if ( get_theme_mod( 'wp_bootstrap_starter_logo' ) ): ?>
         <a href="<?php echo esc_url( home_url( '/' )); ?>">
+        <?php if ( get_field('main_logo') ) { ?>
+          <img src="<?php the_field('main_logo'); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" class="main-logo-width custom">
+        <?php } else { ?>
           <img src="<?php echo esc_url(get_theme_mod( 'wp_bootstrap_starter_logo' )); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" class="main-logo-width">
+        <?php } ?>
         </a>
         <?php else : ?>
-        <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?></a>
+        <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>">
+          <?php if ( get_field('main_logo') ) { ?>
+            <img src="<?php the_field('main_logo'); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" class="main-logo-width custom">
+          <?php } else { ?>
+            <img src="/wp-content/themes/kwburlington/inc/assets/img/kw_white_transparent.png" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" class="main-logo-width default-logo">
+          <?php } ?>
+        </a>
         <?php endif; ?>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,7 +79,9 @@
 
   <div id="page-sub-header">
     <div class="container">
-      <img src="/wp-content/themes/kwburlington/inc/assets/img/kw_red_square_832.jpg" alt="Keller Williams Burlington MC" class="hero-overlay-image"/>
+    <?php if ( get_field('banner_logo') ) { ?>
+      <img src="<?php the_field('banner_logo'); ?>" alt="Keller Williams Burlington MC" class="hero-overlay-image"/>
+    <?php } ?>
     </div>
   </div>
   <?php endif; ?>
