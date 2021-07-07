@@ -12,7 +12,7 @@ get_header('subpage');
       <?php while ( have_posts() ) : the_post(); ?>
       <h1 class="subpage-heading"><?php the_field('page_heading'); ?></h1>
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <section class="entry-content row">
+        <section class="entry-content row team-members-container">
           <?php $args = array('post_type' => 'team_members', 'posts_per_page' => -1, 'order' => 'ASC'); ?>
           <?php $the_query = new WP_Query($args); ?>
           <?php if ( $the_query->have_posts() ) : ?>

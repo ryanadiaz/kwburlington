@@ -1473,12 +1473,18 @@ footer .site-info {
   }
 }
 
+.team-members-container {
+  display: flex;
+  justify-content: center;
+}
+
 .team-member-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 25px;
+  text-align: center;
 }
 
 .team-member-container img {
