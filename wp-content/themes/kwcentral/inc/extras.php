@@ -109,8 +109,8 @@ function wp_bootstrap_starter_bg_class() {
         case "yeti":
             return 'navbar-dark bg-primary';
             break;
-        case "kwburlington":
-            return 'bg-kwburlington';
+        case "kwcentral":
+            return 'bg-kwcentral';
             break;
         default:
             return 'navbar-light';

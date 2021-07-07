@@ -51,7 +51,7 @@
           <?php if ( get_field('main_logo') ) { ?>
             <img src="<?php the_field('main_logo'); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" class="main-logo-width custom">
           <?php } else { ?>
-            <img src="/wp-content/themes/kwburlington/inc/assets/img/kw_white_transparent.png" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" class="main-logo-width default-logo">
+            <img src="/wp-content/themes/kwcentral/inc/assets/img/kw_white_transparent.png" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" class="main-logo-width default-logo">
           <?php } ?>
         </a>
         <?php endif; ?>

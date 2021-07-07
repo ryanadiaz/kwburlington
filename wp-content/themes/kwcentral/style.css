@@ -1,9 +1,9 @@
 /*
-Theme Name: KWBurlington
-Theme URI: https://github.com/ryanadiaz/kwburlington
-Author: KW Burlington
-Author URI: https://burlington.kw.com/
-Description:  Keller Williams Burlington agent dashboard
+Theme Name: KWCentral
+Theme URI: https://github.com/ryanadiaz/kwcentral
+Author: KW Central
+Author URI: https://kwcentral.com/
+Description:  Keller Williams Central agent dashboard
 Version: 1.0.0
 */
 /*--------------------------------------------------------------
@@ -1038,15 +1038,15 @@ body:not(.theme-preset-active) footer#colophon {
 # Custom Styling
 --------------------------------------------------------------*/
 
-.bg-kwburlington {
+.bg-kwcentral {
   background-color: #000!important;
 }
 
-.bg-kwburlington .navbar-toggler-icon {
+.bg-kwcentral .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
 }
 
-.bg-kwburlington .navbar-toggler {
+.bg-kwcentral .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1141,7 +1141,7 @@ body:not(.theme-preset-active) footer#colophon {
 }
 
 #page-sub-header {
-  background-image: url('/wp-content/themes/kwburlington/inc/assets/img/burlington.jpg')!important;
+  background-image: url('/wp-content/themes/kwcentral/inc/assets/img/burlington.jpg')!important;
   height: 50vh;
   min-height: 435px;
   padding: 0;
@@ -1351,7 +1351,7 @@ h2.section-title {
   }
 }
 
-footer.bg-kwburlington {
+footer.bg-kwcentral {
   background-color: #CE011F!important;
 }
 
